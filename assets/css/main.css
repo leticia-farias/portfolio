@@ -2,3 +2,9 @@
 @import url('variables.css');
 @import url('layout.css');
 @import url('base.css');
+
+@import url('components/nav.css');
+@import url('components/button.css');
+@import url('components/skills-item.css');
+@import url('components/projects-item.css');
+@import url('components/courses-item.css');

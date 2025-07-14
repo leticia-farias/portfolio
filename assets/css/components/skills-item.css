@@ -1,0 +1,20 @@
+.skills__item {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.skills__item figure {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: .125rem solid var(--border-color);
+    border-radius: 100%;
+}
+
+.skills__item img {
+    height: 2.8rem;
+}

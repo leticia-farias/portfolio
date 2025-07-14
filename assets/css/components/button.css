@@ -1,0 +1,51 @@
+button {
+    display: flex;
+    align-items: center;
+    border: none;
+    font-family: var(--font-text);
+    color: var(--text-color);
+}
+
+.btn--repository {
+    gap: .6rem;
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.btn--repository svg {
+    height: 2rem;
+    fill: currentColor;
+}
+
+.btn--projects {
+    width: 100%;
+    padding: .6rem 1.2rem;
+    justify-content: center;
+    gap: 1.2rem;
+
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 2.4rem;
+
+    color: var(--primary-bg-color);
+    font-size: 2rem;
+    font-weight: 500;
+
+    transition: var(--transition);
+}
+
+.btn--projects:hover {
+    background-color: var(--primary-bg-color);
+    border: 2px solid var(--primary-color);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.20);
+
+    color: var(--text-color);
+
+    transition: var(--transition);
+}
+
+.btn--projects svg {
+    height: 2.4rem;
+    fill: currentColor;
+}

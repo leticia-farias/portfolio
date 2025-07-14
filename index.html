@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,78 +8,123 @@
     <link rel="shortcut icon" href="assets/images/logo/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body>
     <nav>
         <ul>
-            <li>Sobre</li>
-            <li>Skills</li>
-            <li>Projetos</li>
-            <li>Formação</li>
+            <li><a href="#about">Sobre</a></li>
+            <li>•</li>
+            <li><a href="#skills">Skills</a></li>
+            <li>•</li>
+            <li><a href="#projects">Projetos</a></li>
+            <li>•</li>
+            <li><a href="#training">Formação</a></li>
         </ul>
     </nav>
 
     <main>
-        <section class="about">
-            <figure>
+        <section id="about">
+            <figure id="profile-icon">
                 <img src="assets/images/profile-icon.png" alt="">
             </figure>
             <h1>
-            Oiê!
-            sou Letícia Farias
+                Oiê!
+                sou Letícia Farias
             </h1>
-            <p>Crio páginas bonitas, funcionais e responsivas enquanto estudo Engenharia de Software. Aqui você encontra meus projetos, aprendizados e desafios!</p>
+            <p>Crio páginas bonitas, funcionais e responsivas enquanto estudo Engenharia de Software. Aqui você encontra
+                meus projetos, aprendizados e desafios!</p>
         </section>
-        <section class="skills">
+        <section id="skills">
             <h2>Skills</h2>
-            <ul>
-                <li>
+            <ul class="skills__list">
+                <li class="skills__item">
                     <figure><img src="assets/images/techlogos/java-logo.png" alt="Java logo"></figure>
                     <h3>Java</h3>
                 </li>
+                <li class="skills__item">
+                    <figure><img src="assets/images/techlogos/springboot.png" alt="Java logo"></figure>
+                    <h3>Spring Boot</h3>
+                </li>
+                <li class="skills__item">
+                    <figure><img src="assets/images/techlogos/postgresql.png" alt="Java logo"></figure>
+                    <h3>PostgreSQL</h3>
+                </li>
+                <li class="skills__item">
+                    <figure><img src="assets/images/techlogos/js.png" alt="Java logo"></figure>
+                    <h3>JavaScript</h3>
+                </li>
+                <li class="skills__item">
+                    <figure><img src="assets/images/techlogos/css.png" alt="Java logo"></figure>
+                    <h3>CSS3</h3>
+                </li>
+                <li class="skills__item">
+                    <figure><img src="assets/images/techlogos/figma.png" alt="Java logo"></figure>
+                    <h3>Figma</h3>
+                </li>
             </ul>
         </section>
-        <section class="projects">
-            <h2>Porjetos</h2>
+        <section id="projects">
+            <h2>Projetos</h2>
             <div class="projects__list">
                 <div class="project__item">
+                    <figure><img id="mockup" src="assets/images/projetos/sla.png" alt=""></figure>
                     <div class="project__description">
                         <h3>Discord Clone</h3>
                         <p>Projeto para usar o flexbox do CSS</p>
-                        <ul>
+                        <ul class="project__list">
+                            <li>Funcionalidade 1</li>
+                            <li>Funcionalidade 1</li>
                             <li>Funcionalidade 1</li>
                         </ul>
                         <div class="project__links">
-                            <a href="Repositório">Repositório</a>
+                            <a href="">
+                                <button class="btn--repository">
+                                    Repositório
+                                    <svg viewBox="0 0 33 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M2.5 16C2.5 19.713 3.975 23.274 6.6005 25.8995C9.22601 28.525 12.787 30 16.5 30C20.213 30 23.774 28.525 26.3995 25.8995C29.025 23.274 30.5 19.713 30.5 16C30.5 12.287 29.025 8.72601 26.3995 6.1005C23.774 3.475 20.213 2 16.5 2C12.787 2 9.22601 3.475 6.6005 6.1005C3.975 8.72601 2.5 12.287 2.5 16ZM32.5 16C32.5 20.2435 30.8143 24.3131 27.8137 27.3137C24.8131 30.3143 20.7435 32 16.5 32C12.2565 32 8.18687 30.3143 5.18629 27.3137C2.18571 24.3131 0.5 20.2435 0.5 16C0.5 11.7565 2.18571 7.68687 5.18629 4.68629C8.18687 1.68571 12.2565 0 16.5 0C20.7435 0 24.8131 1.68571 27.8137 4.68629C30.8143 7.68687 32.5 11.7565 32.5 16ZM12.208 21.606C12.0205 21.7938 11.7661 21.8994 11.5007 21.8996C11.2353 21.8997 10.9808 21.7945 10.793 21.607C10.6052 21.4195 10.4996 21.1651 10.4994 20.8997C10.4993 20.6343 10.6045 20.3798 10.792 20.192L18.986 12H13.45C13.1848 12 12.9304 11.8946 12.7429 11.7071C12.5554 11.5196 12.45 11.2652 12.45 11C12.45 10.7348 12.5554 10.4804 12.7429 10.2929C12.9304 10.1054 13.1848 10 13.45 10H21.4C21.6652 10 21.9196 10.1054 22.1071 10.2929C22.2946 10.4804 22.4 10.7348 22.4 11V18.95C22.4 19.2152 22.2946 19.4696 22.1071 19.6571C21.9196 19.8446 21.6652 19.95 21.4 19.95C21.1348 19.95 20.8804 19.8446 20.6929 19.6571C20.5054 19.4696 20.4 19.2152 20.4 18.95V13.414L12.208 21.606Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </button>
+                            </a>
                             <div class="projects__skills">
-                                <figure><img src="assets/images/techlogos/css.png" alt=""></figure>
+                                <figure><img class="skill" src="assets/images/techlogos/css.png" alt=""></figure>
                             </div>
                         </div>
                     </div>
-                    <figure>
-                        <img src="" alt="">
-                    </figure>
                 </div>
-                <button>Ver todos os projetos</button>
+                <button class="btn--projects">
+                    Ver todos os projetos
+                    <svg viewBox="0 0 33 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.5 16C2.5 19.713 3.975 23.274 6.6005 25.8995C9.22601 28.525 12.787 30 16.5 30C20.213 30 23.774 28.525 26.3995 25.8995C29.025 23.274 30.5 19.713 30.5 16C30.5 12.287 29.025 8.72601 26.3995 6.1005C23.774 3.475 20.213 2 16.5 2C12.787 2 9.22601 3.475 6.6005 6.1005C3.975 8.72601 2.5 12.287 2.5 16ZM32.5 16C32.5 20.2435 30.8143 24.3131 27.8137 27.3137C24.8131 30.3143 20.7435 32 16.5 32C12.2565 32 8.18687 30.3143 5.18629 27.3137C2.18571 24.3131 0.5 20.2435 0.5 16C0.5 11.7565 2.18571 7.68687 5.18629 4.68629C8.18687 1.68571 12.2565 0 16.5 0C20.7435 0 24.8131 1.68571 27.8137 4.68629C30.8143 7.68687 32.5 11.7565 32.5 16ZM12.208 21.606C12.0205 21.7938 11.7661 21.8994 11.5007 21.8996C11.2353 21.8997 10.9808 21.7945 10.793 21.607C10.6052 21.4195 10.4996 21.1651 10.4994 20.8997C10.4993 20.6343 10.6045 20.3798 10.792 20.192L18.986 12H13.45C13.1848 12 12.9304 11.8946 12.7429 11.7071C12.5554 11.5196 12.45 11.2652 12.45 11C12.45 10.7348 12.5554 10.4804 12.7429 10.2929C12.9304 10.1054 13.1848 10 13.45 10H21.4C21.6652 10 21.9196 10.1054 22.1071 10.2929C22.2946 10.4804 22.4 10.7348 22.4 11V18.95C22.4 19.2152 22.2946 19.4696 22.1071 19.6571C21.9196 19.8446 21.6652 19.95 21.4 19.95C21.1348 19.95 20.8804 19.8446 20.6929 19.6571C20.5054 19.4696 20.4 19.2152 20.4 18.95V13.414L12.208 21.606Z"
+                            fill="currentColor" />
+                    </svg>
+                </button>
             </div>
         </section>
-        <section class="training">
+        <section id="training">
             <h2>Formação</h2>
             <div class="training__card">
-                <h3>Engenharia de Software</h3>
+                <h3>Bachrelado de Engenharia de Software</h3>
                 <p>Fev 2024 - Atualmente</p>
                 <p>Universidade Católica do Salvador</p>
             </div>
         </section>
-        <section class="courses">
+        <section id="courses">
             <h2>Cursos</h2>
             <div class="courses__list">
                 <div class="courses__item">
-                    <h3>Mini Curso de Git & Github</h3>
-                    <figure><img src="" alt=""></figure>
-                    <div class="courses__description">
-                        <p>Junho 2024 - 5h</p>
-                        <p>Universidade Católica do Salvador</p>
+                    <div class="courses__header">
+                        <h3>Mini Curso de Git & Github</h3>
+                        <svg viewBox="0 0 20 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19.774 11.2692C19.7026 11.3424 19.6177 11.4004 19.5243 11.44C19.4308 11.4796 19.3307 11.5 19.2295 11.5C19.1283 11.5 19.0281 11.4796 18.9347 11.44C18.8413 11.4004 18.7564 11.3424 18.6849 11.2692L9.9998 2.39763L1.31466 11.2692C1.24315 11.3423 1.15826 11.4002 1.06482 11.4397C0.971388 11.4792 0.871244 11.4996 0.770111 11.4996C0.66898 11.4996 0.568836 11.4792 0.475403 11.4397C0.381968 11.4002 0.297071 11.3423 0.225561 11.2692C0.154049 11.1962 0.0973225 11.1095 0.0586205 11.0141C0.0199184 10.9186 0 10.8164 0 10.7131C0 10.6098 0.0199184 10.5075 0.0586205 10.4121C0.0973225 10.3167 0.154049 10.23 0.225561 10.1569L9.45525 0.730773C9.52669 0.657621 9.61157 0.599584 9.70501 0.559983C9.79846 0.520384 9.89863 0.5 9.9998 0.5C10.101 0.5 10.2011 0.520384 10.2946 0.559983C10.388 0.599584 10.4729 0.657621 10.5443 0.730773L19.774 10.1569C19.8457 10.2299 19.9025 10.3166 19.9413 10.412C19.98 10.5075 20 10.6098 20 10.7131C20 10.8164 19.98 10.9187 19.9413 11.0141C19.9025 11.1096 19.8457 11.1963 19.774 11.2692Z"
+                                fill="currentColor" />
+                        </svg>
                     </div>
+                    <p>Junho 2024 - 5h</p>
+                    <p>Universidade Católica do Salvador</p>
                 </div>
             </div>
         </section>
@@ -87,7 +133,8 @@
         fi
     </span> -->
     <footer>
-        <h3>Feito por Letícia Farias - 2025</h3>
+        <p>Feito por Letícia Farias - 2025</p>
     </footer>
 </body>
+
 </html>

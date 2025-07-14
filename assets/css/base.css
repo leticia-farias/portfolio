@@ -1,0 +1,35 @@
+h1, h2, h3, p, li, a {
+    font-family: var(--font-text);
+    color: var(--text-color);
+}
+
+h1 {
+    font-size: 3.6rem;
+    font-weight: 500;
+    /* white-space: ; */
+}
+
+h2 {
+    font-size: 2.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+p, li {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+body {
+    background: linear-gradient(180deg, #C8B7D8 0%, var(--primary-bg-color) 19.23%, var(--primary-bg-color) 92%, #C8B7D8 100%);
+}
+
+.training__card {
+    border: 2px solid var(--border-color);
+    border-radius: 1.2rem;
+}
