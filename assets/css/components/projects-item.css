@@ -1,14 +1,28 @@
-.project__item {
+.projects__item {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
 }
 
-#mockup {
+.projects__mockup {
+    position: relative;
     width: 100%;
 }
 
-.project__links {
+.mockup__screen {
+    overflow: hidden auto;
+    position: absolute;
+    top: 5.4%;
+    left: 11.5%;
+    height: 85%;
+    width: 77%;
+}
+
+.mockup__screen img {
+    width: 100%;
+}
+
+.projects__links {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -22,7 +36,7 @@
     width: 4rem;
     height: 4rem;
     border-radius: 100%;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--primary-bd-color);
 }
 
 .skill {
@@ -31,4 +45,50 @@
 
 .project__list {
     margin-left: 2rem;
+}
+
+.projects__item {
+    padding: 3.2rem;
+    border-radius: 2.4rem;
+    /* background-color: #d9ccb8a8; */
+    background-color: #E5D8D2;
+}
+
+@media (min-width: 1060px) {
+    .projects__item {
+        flex-direction: row;
+        /* justify-content: flex-end; */
+        gap: 3.2rem;
+        width: 100%;
+        align-items: center;
+        /* justify-content: space-between; */
+    }
+
+    /* .item--invert {
+        flex-direction: row-reverse;
+        text-align: right;
+        align-items: flex-end;
+    } */
+
+    /* .item--invert .projects__links {
+        align-items: flex-end;
+    } */
+
+    .mockup {
+        width: 40%;
+    }
+
+    .projects__mockup {
+        width: 40%;
+    }
+
+    .project__description {
+        width: 60%;
+    }
+
+    /* .projects__links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.2rem;
+    } */
 }

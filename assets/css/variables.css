@@ -4,7 +4,8 @@
     --primary-color: #C8B7D8;
     --secondary-color: #A28DB8;
     --primary-bg-color: #F3F1F1;
-    --border-color: #191919;
+    --primary-bd-color: #191919;
+    --secondary-bd-color: #A28DB8;
     --text-color: #191919;
     --font-text: "Poppins", sans-serif;
     --transition: all .2s ease-in-out;

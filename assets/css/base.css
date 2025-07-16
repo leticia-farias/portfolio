@@ -1,4 +1,9 @@
-h1, h2, h3, p, li, a {
+h1,
+h2,
+h3,
+p,
+li,
+a {
     font-family: var(--font-text);
     color: var(--text-color);
 }
@@ -6,12 +11,13 @@ h1, h2, h3, p, li, a {
 h1 {
     font-size: 3.6rem;
     font-weight: 500;
-    /* white-space: ; */
+    white-space: pre-line;
 }
 
 h2 {
     font-size: 2.8rem;
     font-weight: 400;
+    /* text-align: center; */
     text-transform: uppercase;
 }
 
@@ -20,16 +26,52 @@ h3 {
     font-weight: 500;
 }
 
-p, li {
+p,
+li, a {
     font-size: 1.6rem;
     font-weight: 400;
 }
 
 body {
-    background: linear-gradient(180deg, #C8B7D8 0%, var(--primary-bg-color) 19.23%, var(--primary-bg-color) 92%, #C8B7D8 100%);
+    background: linear-gradient(180deg, #C8B7D8 0%, var(--primary-bg-color) 30%);
+    /* background: linear-gradient(180deg, #C8B7D8 0%, var(--primary-bg-color-light, #F9F9F9) 19%, var(--primary-bg-color-light, #F9F9F9) 92%, #C8B7D8 100%), radial-gradient(ellipse 34.89% 12.47% at 93.15% 30.35%, #FFFDC5 0%, var(--primary-bg-color-light, #F9F9F9) 100%);
+    background-blend-mode: darken, normal; */
+}
+
+/* Foto de <a href="https://unsplash.com/pt-br/@sdbusch77?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Steve Busch</a> na <a href="https://unsplash.com/pt-br/fotografias/uma-bela-galaxia-espiral-gira-no-vasto-cosmos-kGPnWZRT7O8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+       */
+
+#skills {
+    /* background-image: url('../images/steve-busch-kGPnWZRT7O8-unsplash.jpg');
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed; */
 }
 
 .training__card {
-    border: 2px solid var(--border-color);
+    border: 1px solid var(--primary-bd-color);
     border-radius: 1.2rem;
+}
+
+footer {
+    background-color: var(--secondary-color);
+}
+
+@media (min-width: 1060px) {
+    h1 {
+        font-size: 4.8rem;
+    }
+
+    h2 {
+        font-size: 3.6rem;
+    }
+
+    h3 {
+        font-size: 2.8rem;
+    }
+
+    p,
+    li, a {
+        font-size: 2rem;
+    }
 }
