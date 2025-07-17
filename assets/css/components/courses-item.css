@@ -5,9 +5,11 @@
 }
 
 .courses__item {
+    height: fit-content;
     display: flex;
     flex-direction: column;
     padding: 1.6rem;
+    gap: 1.2rem;
 
     background-color: var(--primary-color);
     border: 2px solid var(--border-color);
@@ -43,7 +45,7 @@
     transform: rotate(180deg);
 }
 
-@media (min-width: 1060px) {
+@media (min-width: 1020px) {
     .courses__list {
         flex-flow: row wrap;
         justify-content: space-between;

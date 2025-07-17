@@ -65,29 +65,25 @@
 .projects__item {
     padding: 3.2rem;
     border-radius: 2.4rem;
-    /* background-color: #d9ccb8a8; */
     background-color: var(--project-bg-color);
+}
+
+@media (min-width: 700px) {
+    .projects__item {
+        flex-direction: row;
+        gap: 3.2rem;
+        width: 100%;
+        align-items: center;
+    }
 }
 
 @media (min-width: 1060px) {
     .projects__item {
         flex-direction: row;
-        /* justify-content: flex-end; */
         gap: 3.2rem;
         width: 100%;
         align-items: center;
-        /* justify-content: space-between; */
     }
-
-    /* .item--invert {
-        flex-direction: row-reverse;
-        text-align: right;
-        align-items: flex-end;
-    } */
-
-    /* .item--invert .projects__links {
-        align-items: flex-end;
-    } */
 
     .mockup {
         width: 40%;

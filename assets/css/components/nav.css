@@ -52,7 +52,7 @@ nav ul a:hover {
     cursor: pointer;
 }
 
-@media (min-width: 1060px) {
+@media (min-width: 1020px) {
     nav {
         left: 50%;
         transform: translateX(-50%);

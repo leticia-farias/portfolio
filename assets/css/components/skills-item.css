@@ -24,6 +24,23 @@
     height: 2.8rem;
 }
 
+@media (min-width: 440px) {
+    .skills__list {
+        flex-flow: row wrap;
+        gap: 2.4rem 3.2rem;
+    }
+
+    .skills__item {
+        width: calc((100% - 3.2rem)/2);
+    }
+}
+
+@media (min-width: 700px) {
+    .skills__item {
+        width: calc((100% - 3.2rem * 2)/3);
+    }
+}
+
 @media (min-width: 1060px) {
     .skills__item figure {
         width: 5.5rem;
