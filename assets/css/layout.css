@@ -79,6 +79,7 @@ section {
 
 footer {
     text-align: center;
+    padding: 2rem;
 }
 
 @media (min-width: 560px) {
