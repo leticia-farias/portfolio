@@ -142,7 +142,7 @@ footer {
         /* padding: 8.9rem 19.4rem 2rem 12rem; */
         padding: 0 12.2rem 2rem 9.6rem;
         /* gap: 6.4rem; */
-        /* gap: 30vh; */
+        gap: 30vh;
     }
 
     #profile-icon {
@@ -159,7 +159,7 @@ footer {
     }
 
     section {
-        min-height: 80vh;
+        /* min-height: 80vh; */
         /* padding: 3.2rem 12.2rem 3.2rem 9.6rem; */
     }
 
