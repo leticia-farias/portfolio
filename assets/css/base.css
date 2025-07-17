@@ -41,7 +41,7 @@ li, a {
 }
 
 body {
-    background: linear-gradient(180deg, #C8B7D8 0%, var(--primary-bg-color) 19%);
+    background: linear-gradient(180deg, var(--primary-color) 0%, var(--primary-bg-color) 19%);
     /* background: linear-gradient(180deg, #C8B7D8 0%, var(--primary-bg-color-light, #F9F9F9) 19%, var(--primary-bg-color-light, #F9F9F9) 92%, #C8B7D8 100%), radial-gradient(ellipse 34.89% 12.47% at 93.15% 30.35%, #FFFDC5 0%, var(--primary-bg-color-light, #F9F9F9) 100%);
     background-blend-mode: darken, normal; */
 }

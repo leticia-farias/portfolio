@@ -13,10 +13,10 @@ button {
 
 .btn--repository {
     gap: .6rem;
-    color: #472A52;
+    color: var(--secondary-color);
     font-size: 1.6rem;
     font-weight: 400;
-    background-color: #E5D8D2;
+    background-color: var(--project-bg-color);
 }
 
 .btn--repository svg {
@@ -34,8 +34,8 @@ button {
     justify-content: center;
     gap: 1.2rem;
 
-    background-color: #E5D8D2;
-    border: 2px solid #E5D8D2;
+    background-color: var(--project-bg-color);
+    border: 2px solid var(--project-bg-color);
     border-radius: 2.4rem;
 
     /* color: var(--primary-bg-color); */

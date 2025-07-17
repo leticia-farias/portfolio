@@ -15,6 +15,7 @@
     left: 11.5%;
     height: 85%;
     width: 77%;
+    fill: var(--project-bg-color);
     
     overflow: hidden auto;
     background-color: black;
@@ -50,7 +51,7 @@
     width: 4rem;
     height: 4rem;
     border-radius: 100%;
-    border: 1px solid #472A52;
+    border: 1px solid var(--secondary-bd-color);
 }
 
 .skill {
@@ -65,7 +66,7 @@
     padding: 3.2rem;
     border-radius: 2.4rem;
     /* background-color: #d9ccb8a8; */
-    background-color: #E5D8D2;
+    background-color: var(--project-bg-color);
 }
 
 @media (min-width: 1060px) {

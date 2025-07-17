@@ -21,6 +21,7 @@
 }
 
 .courses__header svg {
+    color: var(--text-color);
     width: 2rem;
 }
 
