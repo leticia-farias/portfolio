@@ -14,15 +14,33 @@
     border-radius: 1.2rem;
 }
 
-.courses__header {
+.btn--courses {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--primary-color);
 }
 
-.courses__header svg {
+.btn--courses:hover {
+    /* background-color: var(--text-color); */
+}
+
+.btn--courses i {
     color: var(--text-color);
-    width: 2rem;
+    font-size: 2rem;
+}
+
+.courses__description {
+    display: none;
+}
+
+.courses__item.active .courses__description {
+    display: flex;
+    flex-direction: column;
+}
+
+.courses__item.active .btn--courses i {
+    transform: rotate(180deg);
 }
 
 @media (min-width: 1060px) {
