@@ -47,15 +47,24 @@ section {
 
 .about__contact {
     display: flex;
-    gap: 1.2rem;
+    gap: 1.6rem;
 }
 
-.about__contact svg {
+.contact__icon {
     height: 2.4rem;
+    transition: var(--transition);
 }
 
-.about__contact svg:hover {
+.contact__icon:hover {
     color: var(--secondary-color);
+    transform: scale(1.1);
+    transition: var(--transition);
+}
+
+#skills__aprendendo, #training__courses {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
 }
 
 .skills__list {
@@ -104,13 +113,9 @@ footer {
         /* padding: 0 19.4rem 2rem 12rem;
         gap: 6.4rem;
     }
-    
-    #about {
-        height: 100vh;
-    }
 } */ 
 
-@media (min-width: 800px) {
+/* @media (min-width: 800px) {
     #about {
         flex-direction: row;
         gap: 2.4rem;
@@ -129,18 +134,55 @@ footer {
         width: 30%;
         gap: 2.4rem 3.2rem;
     }
-}
+} */
 
 @media (min-width: 1060px) {
     main {
         /* padding: 8.9rem 13.8rem 2rem 6.4rem; */
         /* padding: 8.9rem 19.4rem 2rem 12rem; */
         padding: 0 12.2rem 2rem 9.6rem;
-        gap: 6.4rem;
+        /* gap: 6.4rem; */
+        /* gap: 30vh; */
+    }
+
+    #profile-icon {
+        flex: 1;
+        max-width: 32rem;
     }
 
     #profile-icon {
         width: 32rem;
+    }
+
+    .noGap {
+        gap: 0;
+    }
+
+    section {
+        min-height: 80vh;
+        /* padding: 3.2rem 12.2rem 3.2rem 9.6rem; */
+    }
+
+    #about {
+        flex-direction: row;
+        gap: 2.4rem;
+    }
+
+    #about {
+        min-height: 100vh;
+    }
+
+    .about__description {
+        flex: 2;
+    }
+
+    #skills {
+        /* background-color: var(--secondary-color); */
+    }
+    
+    .skills__item {
+        width: 30%;
+        gap: 2.4rem 3.2rem;
     }
 
     .projects__list {
