@@ -13,7 +13,7 @@ button {
 
 .btn--repository {
     gap: .6rem;
-    color: var(--secondary-color);
+    color: #472A52;
     font-size: 1.6rem;
     font-weight: 400;
     background-color: #E5D8D2;
@@ -25,7 +25,7 @@ button {
 }
 
 .btn--repository:hover {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .btn--projects {

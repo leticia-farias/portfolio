@@ -10,16 +10,25 @@
 }
 
 .mockup__screen {
-    overflow: hidden auto;
     position: absolute;
     top: 5.4%;
     left: 11.5%;
     height: 85%;
     width: 77%;
+    
+    overflow: hidden auto;
+    background-color: black;
 }
 
 .mockup__screen img {
     width: 100%;
+    transition: var(--transition);
+}
+
+.project__description {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
 }
 
 .projects__links {
@@ -29,6 +38,11 @@
     align-items: center;
 }
 
+.projects__skills {
+    display: flex;
+    gap: .6rem;
+}
+
 .projects__skills figure {
     display: flex;
     justify-content: center;
@@ -36,7 +50,7 @@
     width: 4rem;
     height: 4rem;
     border-radius: 100%;
-    border: 1px solid var(--primary-bd-color);
+    border: 1px solid #472A52;
 }
 
 .skill {
