@@ -5,6 +5,8 @@
     --primary-color: #C8B7D8;
     --secondary-color: #472A52;
 
+    --icon-color: #A28DB8;
+
     --primary-bg-color: #F3F1F1;
 
     --project-bg-color: #E5D8D2;
@@ -24,6 +26,8 @@
 :root[data-theme='dark'] {
     --primary-color: #472A52;
     --secondary-color: #C8B7D8;
+
+    --icon-color: #C8B7D8;
     
     --primary-bg-color: #191919;
 

@@ -10,12 +10,18 @@ nav {
     border-bottom-left-radius: 2.4rem;
     border-bottom-right-radius: 2.4rem;
     z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 nav ul {
     display: flex;
     gap: 1.2rem;
     justify-content: center;
+    align-items: center;
     list-style: none;
 }
 
@@ -29,11 +35,28 @@ nav ul a:hover {
     padding: .5rem;
 } */
 
+/* .nav__toogle {
+    height: 4rem;
+} */
+
+#toggleTheme {
+    color: var(--icon-color);
+    font-size: 2rem;
+    transition: var(--transition);
+}
+
+#toggleTheme:hover {
+    /* transform: scale(1.1); */
+    color: var(--text-color);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
 @media (min-width: 1060px) {
     nav {
         left: 50%;
         transform: translateX(-50%);
         /* width: 71.5rem; */
-        width: 50rem;
+        width: fit-content;
     }
 }
