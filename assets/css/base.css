@@ -64,14 +64,14 @@ body {
 footer {
     width: 100%;
     padding: 2rem;
-    background: rgba(162, 141, 184, .2);
-    backdrop-filter: blur(18px);
-    border-top-left-radius: 2.4rem;
-    border-top-right-radius: 2.4rem;
+    /* background: rgba(162, 141, 184, .2); */
+    /* backdrop-filter: blur(18px); */
+    /* border-top-left-radius: 2.4rem; */
+    /* border-top-right-radius: 2.4rem; */
 }
 
 footer {
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
 }
 
 @media (min-width: 1060px) {
